@@ -231,7 +231,7 @@ class User extends Model
         $this->username = $username;
         $this->password = $password;
 
-        $token = bin2hex(openssl_random_pseudo_bytes(git 16));
+        $token = bin2hex(openssl_random_pseudo_bytes(16));
 
         $this->token = $token;
         $this->token_expiry = date('Y-m-d H:i:s', strtotime('+1 hour'));
