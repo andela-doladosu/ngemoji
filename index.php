@@ -1,16 +1,14 @@
 <?php
 
 require_once 'vendor/autoload.php';
-//header('Content-Type: application/json');
-use Dara\Origins\EmojiApi;
+
 use Dara\Origins\User;
 use Dara\Origins\Emoji;
+use Slim\Slim;
 
 date_default_timezone_set('Africa/Lagos');
 
-$app = new EmojiApi();
-
-$model = new User();
+$app = new Slim();
 
 $authCheck = function ($route) use ($app) {
    
