@@ -2,9 +2,9 @@
 
 require_once 'vendor/autoload.php';
 
+use Slim\Slim;
 use Dara\Origins\User;
 use Dara\Origins\Emoji;
-use Slim\Slim;
 
 date_default_timezone_set('Africa/Lagos');
 
@@ -33,11 +33,11 @@ $authCheck = function ($route) use ($app) {
 
 $ownerCheck = function ($route) use ($app) {
 
-    $username = $app->request->params('username');
+    $userToken = $app->request->headers['token'];
     $emojiId = $route->getParams()['id'];
 
     $user = new User();
-    $check = $user->checkEmojiOwnership($username, $emojiId);
+    $check = $user->checkEmojiOwnership($userToken, $emojiId);
     
     if (!$check) {
         $app->halt(309, json_encode(["Message" => "You are not allowed to modify this emoji!"]));
@@ -94,16 +94,8 @@ $app->get('/emojis', function () {
 });
 
 $app->post('/emojis', $authCheck, function () use ($app) {
-   
-    $user = new User();
-    $emoji = new Emoji();
-    $emoji->name = $app->request->params('name');
-    $emoji->category = $app->request->params('category');
-    $emoji->char = $app->request->params('char');
-    $emoji->keywords = implode(', ', $app->request->params('keywords'));
-    $emoji->created_by = $user->getUserId($app->request->params('username'));
-    
-    echo json_encode($emoji->save());
+    $emoji = new Emoji();    
+    echo json_encode($emoji->post($app));
 });
 
 
@@ -126,7 +118,7 @@ $app->patch('/emojis/:id', $authCheck, $emojiExists, $ownerCheck, function ($id)
 
 $app->delete('/emojis/:id', $authCheck, $emojiExists, $ownerCheck, function ($id) use ($app) {
     $delete = Emoji::destroy($id);
-    var_dump($delete);
+    echo json_encode($delete);
 });
 
 $app->run();
