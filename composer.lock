@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "22ff461b4e56d66de0cc1713e09f5a20",
-    "content-hash": "e5f699442e6b18eae3bdb7c0d2931b00",
+    "hash": "4a6755a656f3876811f1d1573fe7b1a8",
+    "content-hash": "b52ec5173377877626fe839d83f214cb",
     "packages": [
         {
             "name": "dara/liteorm",
@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/andela-doladosu/liteorm.git",
-                "reference": "22e597728962574cbbe4f316c102158194618a8e"
+                "reference": "6ab7f533b02bbdf559f8c484869712eee29a4185"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andela-doladosu/liteorm/zipball/22e597728962574cbbe4f316c102158194618a8e",
-                "reference": "22e597728962574cbbe4f316c102158194618a8e",
+                "url": "https://api.github.com/repos/andela-doladosu/liteorm/zipball/6ab7f533b02bbdf559f8c484869712eee29a4185",
+                "reference": "6ab7f533b02bbdf559f8c484869712eee29a4185",
                 "shasum": ""
             },
             "require": {
@@ -63,7 +63,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2015-10-20 15:59:21"
+            "time": "2015-10-20 17:12:33"
         },
         {
             "name": "doctrine/instantiator",
