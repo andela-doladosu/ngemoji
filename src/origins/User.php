@@ -17,26 +17,9 @@ class User extends Model
      * @param  int $emojiId  
      * @return string           
      */
-    public function checkEmojiOwnership($userName, $emojiId)
+    public function checkEmojiOwnership($token, $emojiId)
     {  
-        return $this->getUserId($userName) == $this->getEmojiOwner($emojiId) ? true : false;   
-    }
-
-
-    /**
-     * Return user details
-     * 
-     * @param  string $table   
-     * @param  string $column  
-     * @param  string $keyword 
-     * @return string          
-     */
-    public function where($table, $column, $keyword)
-    {
-        $selectValue = $this->connection->prepare('select * from '.$table.' where '.$column.' = \''.$keyword.'\'');
-        $selectValue->execute();
-
-        return $selectValue->fetch(PDO::FETCH_ASSOC);
+        return $this->getUserId($token) == $this->getEmojiOwner($emojiId) ? true : false;   
     }
 
 
@@ -46,9 +29,9 @@ class User extends Model
      * @param  string $userName 
      * @return int           
      */
-    public function getUserId($userName)
+    public function getUserId($token)
     {
-        $user = $this->where('users', 'username', $userName);
+        $user = $this->where('users', 'token', $token);
         return $user['id'];
     }
 
@@ -92,11 +75,10 @@ class User extends Model
     {
         $logUserIn = User::find($userId);
         $token = bin2hex(openssl_random_pseudo_bytes(16));
-
         $logUserIn->token = $token;
         $logUserIn->token_expiry = date('Y-m-d H:i:s', strtotime('+1 hour'));
         $logUserIn->logged_in = true;
-        
+              
         return !$logUserIn->save() ? ["msg" => "An error occurred. Please login again"] : $this->loginSuccessMessage($token);
     }
 
