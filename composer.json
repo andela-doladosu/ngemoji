@@ -20,7 +20,6 @@
     "require": {
         "php" : ">=5.3.0",
         "slim/slim": "^2.6",
-        "dara/liteorm": "@dev",
         "phpspec/phpspec": "^2.3"
     },
     "require-dev": {
@@ -40,10 +39,8 @@
     "spec\\": "spec/"
     },
     "scripts": {
-        "test": "phpunit",
-        "pre-install-cmd": [
-            "composer clear-cache"
-        ]
+        "test": "phpunit"
+        
     },
     "extra": {
         "branch-alias": {
