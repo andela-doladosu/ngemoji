@@ -40,7 +40,10 @@
     "spec\\": "spec/"
     },
     "scripts": {
-        "test": "phpunit"
+        "test": "phpunit",
+        "pre-install-cmd": [
+            "composer clear-cache"
+        ]
     },
     "extra": {
         "branch-alias": {
