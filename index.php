@@ -6,6 +6,8 @@ use Slim\Slim;
 use Dara\Origins\User;
 use Dara\Origins\Emoji;
 
+echo 'Front page';
+
 date_default_timezone_set('Africa/Lagos');
 
 $app = new Slim();
