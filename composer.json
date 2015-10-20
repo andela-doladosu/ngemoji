@@ -34,13 +34,19 @@
         "classmap": ["src"]
     },
     "autoload-dev": {
-        "psr-4": {
-            "Dara\\Test\\": "tests"
-        },
-        "classmap": ["tests"]
+    "classmap":[
+      "spec/"
+    ],
+    "spec\\": "spec/"
     },
     "scripts": {
-        "test": "phpunit"
+        "test": "phpunit",
+        "pre-update-cmd": [
+            "composer clear-cache"
+        ],
+        "pre-install-cmd": [
+            "composer clear-cache"
+        ]
     },
     "extra": {
         "branch-alias": {
