@@ -7,7 +7,7 @@ use dara\potatoorm;
 use Dotenv;
 
 
-class Model extends basemodel
+class Model extends BaseModel
 {
   
 }
