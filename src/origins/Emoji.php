@@ -29,7 +29,7 @@ class Emoji extends Model
     $user = new User();
     $this->name = $app->request->params('name');
     $this->category = $app->request->params('category');
-    $this->char = $app->request->params('char');
+    $this->emoji = $app->request->params('emoji');
     $this->keywords = $app->request->params('keywords');
     date_default_timezone_set('Africa/Lagos');
     $this->date_created = date('Y-m-d H:i:s', time());
