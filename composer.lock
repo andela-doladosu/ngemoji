@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bb5bbe6a44b605f0feb3471f9d53a130",
-    "content-hash": "12de2ec29afa58171ee2e5f076a168d8",
+    "hash": "22ff461b4e56d66de0cc1713e09f5a20",
+    "content-hash": "e5f699442e6b18eae3bdb7c0d2931b00",
     "packages": [
         {
-            "name": "dara/potatoorm",
+            "name": "dara/liteorm",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/andela-doladosu/potatoorm.git",
-                "reference": "1dd8c0229f5362c06a4ce9d8ecc38673690ddb36"
+                "url": "https://github.com/andela-doladosu/liteorm.git",
+                "reference": "d6ff18b4335b47361982fd17b858b503441a792e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andela-doladosu/potatoorm/zipball/1dd8c0229f5362c06a4ce9d8ecc38673690ddb36",
-                "reference": "1dd8c0229f5362c06a4ce9d8ecc38673690ddb36",
+                "url": "https://api.github.com/repos/andela-doladosu/liteorm/zipball/d6ff18b4335b47361982fd17b858b503441a792e",
+                "reference": "d6ff18b4335b47361982fd17b858b503441a792e",
                 "shasum": ""
             },
             "require": {
@@ -52,18 +52,18 @@
                 {
                     "name": "Dara Oladosu",
                     "email": "dara.Oladosu@andela.com",
-                    "homepage": "http://github.com/aandela-doladosu",
+                    "homepage": "http://github.com/andela-doladosu",
                     "role": "Developer"
                 }
             ],
             "description": "A database management system",
-            "homepage": "https://github.com/andela-doladosu/potato-orm",
+            "homepage": "https://github.com/andela-doladosu/liteorm",
             "keywords": [
                 "Dara",
                 "database",
                 "orm"
             ],
-            "time": "2015-10-08 15:25:11"
+            "time": "2015-10-20 15:42:54"
         },
         {
             "name": "doctrine/instantiator",
@@ -1646,16 +1646,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.11",
+            "version": "4.8.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "bdd199472410fd7e32751f9c814c7e06f2c21bd5"
+                "reference": "b4900675926860bef091644849305399b986efa2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/bdd199472410fd7e32751f9c814c7e06f2c21bd5",
-                "reference": "bdd199472410fd7e32751f9c814c7e06f2c21bd5",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b4900675926860bef091644849305399b986efa2",
+                "reference": "b4900675926860bef091644849305399b986efa2",
                 "shasum": ""
             },
             "require": {
@@ -1714,7 +1714,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-10-07 10:39:46"
+            "time": "2015-10-17 15:03:30"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -1860,16 +1860,16 @@
         },
         {
             "name": "sebastian/global-state",
-            "version": "1.0.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/global-state.git",
-                "reference": "c7428acdb62ece0a45e6306f1ae85e1c05b09c01"
+                "reference": "bc37d50fea7d017d3d340f230811c9f1d7280af4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/c7428acdb62ece0a45e6306f1ae85e1c05b09c01",
-                "reference": "c7428acdb62ece0a45e6306f1ae85e1c05b09c01",
+                "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/bc37d50fea7d017d3d340f230811c9f1d7280af4",
+                "reference": "bc37d50fea7d017d3d340f230811c9f1d7280af4",
                 "shasum": ""
             },
             "require": {
@@ -1907,7 +1907,7 @@
             "keywords": [
                 "global state"
             ],
-            "time": "2014-10-06 09:23:50"
+            "time": "2015-10-12 03:26:01"
         },
         {
             "name": "sebastian/version",
@@ -1948,7 +1948,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "dara/potatoorm": 20
+        "dara/liteorm": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
