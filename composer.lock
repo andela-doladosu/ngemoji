@@ -4,67 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "71c4e1c4b647f4608d0bd2a6c6ddacf1",
-    "content-hash": "71fa9f1943c1a4e7866121377fa1bef3",
+    "hash": "2c708796b44d3d6b1c942b1ef3eb39d5",
+    "content-hash": "46a0e1e1e914364d84d4d1324212559f",
     "packages": [
-        {
-            "name": "dara/liteorm",
-            "version": "dev-pgsql",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/andela-doladosu/liteorm.git",
-                "reference": "4e2b4261645a5e7f5029649453bc62f599a5f679"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/andela-doladosu/liteorm/zipball/4e2b4261645a5e7f5029649453bc62f599a5f679",
-                "reference": "4e2b4261645a5e7f5029649453bc62f599a5f679",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0",
-                "vlucas/phpdotenv": "^2.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "^0.9.4",
-                "phpunit/phpunit": "4.*",
-                "scrutinizer/ocular": "~1.1"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Dara\\": "src"
-                },
-                "classmap": [
-                    "src"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Dara Oladosu",
-                    "email": "dara.Oladosu@andela.com",
-                    "homepage": "http://github.com/andela-doladosu",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A database management system",
-            "homepage": "https://github.com/andela-doladosu/liteorm",
-            "keywords": [
-                "Dara",
-                "database",
-                "orm"
-            ],
-            "time": "2015-10-20 19:04:22"
-        },
         {
             "name": "doctrine/instantiator",
             "version": "1.0.5",
@@ -881,52 +823,6 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2015-09-14 14:14:09"
-        },
-        {
-            "name": "vlucas/phpdotenv",
-            "version": "v2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "91064290f5b53a09bdff1b939d7f69fb0e7531b5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/91064290f5b53a09bdff1b939d7f69fb0e7531b5",
-                "reference": "91064290f5b53a09bdff1b939d7f69fb0e7531b5",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Dotenv\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD"
-            ],
-            "authors": [
-                {
-                    "name": "Vance Lucas",
-                    "email": "vance@vancelucas.com",
-                    "homepage": "http://www.vancelucas.com"
-                }
-            ],
-            "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
-            "homepage": "http://github.com/vlucas/phpdotenv",
-            "keywords": [
-                "dotenv",
-                "env",
-                "environment"
-            ],
-            "time": "2015-05-30 16:15:01"
         }
     ],
     "packages-dev": [
@@ -1947,9 +1843,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "dara/liteorm": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
