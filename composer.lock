@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4a6755a656f3876811f1d1573fe7b1a8",
-    "content-hash": "b52ec5173377877626fe839d83f214cb",
+    "hash": "71c4e1c4b647f4608d0bd2a6c6ddacf1",
+    "content-hash": "71fa9f1943c1a4e7866121377fa1bef3",
     "packages": [
         {
             "name": "dara/liteorm",
-            "version": "dev-master",
+            "version": "dev-pgsql",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andela-doladosu/liteorm.git",
-                "reference": "e97f69e20be4ce0c078a0c25a9a777307d85e9e4"
+                "reference": "4e2b4261645a5e7f5029649453bc62f599a5f679"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andela-doladosu/liteorm/zipball/e97f69e20be4ce0c078a0c25a9a777307d85e9e4",
-                "reference": "e97f69e20be4ce0c078a0c25a9a777307d85e9e4",
+                "url": "https://api.github.com/repos/andela-doladosu/liteorm/zipball/4e2b4261645a5e7f5029649453bc62f599a5f679",
+                "reference": "4e2b4261645a5e7f5029649453bc62f599a5f679",
                 "shasum": ""
             },
             "require": {
@@ -63,7 +63,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2015-10-20 18:27:38"
+            "time": "2015-10-20 19:04:22"
         },
         {
             "name": "doctrine/instantiator",
