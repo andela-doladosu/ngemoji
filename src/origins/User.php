@@ -242,9 +242,9 @@ class User extends Model
      * @param  string $password 
      * @return array           
      */
-    public function logout($username, $password)
+    public function logout($token)
     {
-        $user = $this->doAuth($username, $password);
+        $user = $this->where('users', 'token', $token);
         $currentUser = User::find($user['id']);
         $currentUser->logged_in = false;
         $currentUser->token = false;
