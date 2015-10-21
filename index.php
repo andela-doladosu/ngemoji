@@ -13,22 +13,22 @@ $app = new Slim();
 $authCheck = function ($route) use ($app) {
    
     $user = new User();
-    $username = $app->request->params('username');
-    $password = $app->request->params('password');
     $userToken = $app->request->headers['token']; 
 
-    $userInfo = $user->where('users', 'username', $username);
+    $userInfo = $user->where('users', 'token', $userToken);
     
     $storedToken =  $userInfo['token'];
     $now = date('Y-m-d H:i:s', time());
-    
+    var_dump($storedToken);
+
+    if (!$storedToken) {
+        $app->halt(401, json_encode(["Message" => "You are not allowed to access this route!"]));
+    }  
+
     if ($now > $userInfo['token_expiry']) {
         $app->halt(401, json_encode(["Message" => "Expired token. Please login again"]));
     }
 
-    if ($userToken != $storedToken || !$userInfo['logged_in']) {
-        $app->halt(401, json_encode(["Message" => "You are not allowed to access this route!"]));
-    }  
 };
 
 $ownerCheck = function ($route) use ($app) {
@@ -81,9 +81,8 @@ $app->post('/auth/register', function () use ($app) {
 $app->get('/auth/logout', $authCheck, function () use ($app) {
 
     $user = new User();
-    $username = $app->request->params('username');
-    $password = $app->request->params('password');
-    $logout = $user->logout($username, $password);
+    $userToken = $app->request->headers['token']; 
+    $logout = $user->logout($userToken);
 
     echo json_encode($logout);
 
