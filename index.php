@@ -19,8 +19,7 @@ $authCheck = function ($route) use ($app) {
     
     $storedToken =  $userInfo['token'];
     $now = date('Y-m-d H:i:s', time());
-    var_dump($storedToken);
-
+    
     if (!$storedToken) {
         $app->halt(401, json_encode(["Message" => "You are not allowed to access this route!"]));
     }  
@@ -40,7 +39,7 @@ $ownerCheck = function ($route) use ($app) {
     $check = $user->checkEmojiOwnership($userToken, $emojiId);
     
     if (!$check) {
-        $app->halt(309, json_encode(["Message" => "You are not allowed to modify this emoji!"]));
+        $app->halt(301, json_encode(["Message" => "You are not allowed to modify this emoji!"]));
     }    
 };
 
@@ -115,8 +114,9 @@ $app->patch('/emojis/:id', $authCheck, $emojiExists, $ownerCheck, function ($id)
     echo json_encode($patch);  
 });
 
-$app->delete('/emojis/:id', $authCheck, $emojiExists, $ownerCheck, function ($id) use ($app) {
-    $delete = Emoji::destroy($id);
+$app->delete('/emojis/:id', $authCheck, $emojiExists, $ownerCheck, function ($id) {
+    $emoji = new Emoji();
+    $delete = $emoji->delete($id);
     echo json_encode($delete);
 });
 

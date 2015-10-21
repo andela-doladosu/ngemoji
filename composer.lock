@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8e68595dd034640c6620caf63ff154f6",
+    "hash": "71c4e1c4b647f4608d0bd2a6c6ddacf1",
     "content-hash": "71fa9f1943c1a4e7866121377fa1bef3",
     "packages": [
         {
@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/andela-doladosu/liteorm.git",
-                "reference": "474591f45ed3abb0de78d81574165c608f374c3f"
+                "reference": "e68da9f32156802228ba9d72f7a7210a5484177c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andela-doladosu/liteorm/zipball/474591f45ed3abb0de78d81574165c608f374c3f",
-                "reference": "474591f45ed3abb0de78d81574165c608f374c3f",
+                "url": "https://api.github.com/repos/andela-doladosu/liteorm/zipball/e68da9f32156802228ba9d72f7a7210a5484177c",
+                "reference": "e68da9f32156802228ba9d72f7a7210a5484177c",
                 "shasum": ""
             },
             "require": {
@@ -63,7 +63,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2015-10-21 10:17:25"
+            "time": "2015-10-21 11:49:43"
         },
         {
             "name": "doctrine/instantiator",

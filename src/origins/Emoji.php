@@ -75,4 +75,9 @@ class Emoji extends Model
     return $emoji->save() ? ["msg" => "update successful"] : ["msg" => "Nothing to update"];
   }
 
+  public function delete($id)
+  {
+    return static::destroy($id) ? ["msg" => "Emoji was deleted successfully"]: ["msg" => "Unable to delete."];
+  }
+
 }
