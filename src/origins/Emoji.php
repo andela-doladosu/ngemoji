@@ -33,7 +33,7 @@ class Emoji extends Model
     $this->keywords = $app->request->params('keywords');
     date_default_timezone_set('Africa/Lagos');
     $this->date_created = date('Y-m-d H:i:s', time());
-    $this->created_by = $user->getUserId($app->request->params('username'));
+    $this->created_by = $user->getUserId($app->request->headers['token']);
 
     return $this->save() ? ["msg" => "Emoji saved succesfully"] : ["msg" => "Unable to save emoji"];
 
