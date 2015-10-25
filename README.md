@@ -52,11 +52,6 @@ Call the `/auth/login` API endpoint with the following options
 ````````
 method = POST
 
-form parameters
-
-username = anyUsername 
-password = anyPassword
-
 header parameters
 
 token = generatedToken
@@ -67,11 +62,6 @@ token = generatedToken
 Call the `/auth/logout` API endpoint with the following options
 ````````
 method = GET
-
-URL parameters
-
-username = anyUsername 
-password = anyPassword
 
 header parameters
 
@@ -86,8 +76,6 @@ method = POST
 
 form parameters
 
-username   = anyUsername 
-password   = anyPassword
 name       = anyEmojiName
 category   = anyCategory
 char       = anyEmojiChaaracter
@@ -107,8 +95,6 @@ method = PUT/PATCH
 
 form parameters
 
-username   =  anyUsername 
-password   =  anyPassword
 name       =  anyEmojiName
 category   =  anyCategory
 char       =  anyEmojiChaaracter
@@ -125,11 +111,6 @@ token = generatedToken
 Call the `/emojis/:id` API endpoint with the following options
 ````````
 method = DELETE
-
-form parameters
-
-username = anyUsername 
-password = anyPassword
 
 header parameters
 
