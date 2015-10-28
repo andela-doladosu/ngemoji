@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/andela-doladosu/ngemoji.svg?branch=master)](https://travis-ci.org/andela-doladosu/ngemoji)
+[![Build Status](https://travis-ci.org/andela-doladosu/ngemoji.svg)](https://travis-ci.org/andela-doladosu/ngemoji)
 
 #NGemoji
 NGemoji is a lightweight API for naija emojis built using the `Slim` framework.
@@ -79,8 +79,7 @@ form parameters
 name       = anyEmojiName
 category   = anyCategory
 char       = anyEmojiChaaracter
-keywords[] = keyword1
-keywords   = keyword2
+keywords   = keyword1, keyword2
 
 header parameters
 
@@ -98,8 +97,7 @@ form parameters
 name       =  anyEmojiName
 category   =  anyCategory
 char       =  anyEmojiChaaracter
-keywords[] =  keyword1
-keywords[] =  keyword2
+keywords   =  keyword1, keyword2
 
 header parameters
 
